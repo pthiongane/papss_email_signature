@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <style>
+        body {
+            line-height: 116%;
+            font-family: Aptos;
+            font-size: 12pt
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0pt 0pt 8pt
+        }
+
+        table {
+            margin-top: 0pt;
+            margin-bottom: 8pt
+        }
+
+        h1 {
+            margin-top: 18pt;
+            margin-bottom: 4pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 116%;
+            font-family: 'Aptos Display';
+            font-size: 20pt;
+            font-weight: normal;
+            color: #0f4761
+        }
+
+        h2 {
+            margin-top: 8pt;
+            margin-bottom: 4pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 116%;
+            font-family: 'Aptos Display';
+            font-size: 16pt;
+            font-weight: normal;
+            color: #0f4761
+        }
+
+        h3 {
+            margin-top: 8pt;
+            margin-bottom: 4pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 116%;
+            font-family: Aptos;
+            font-size: 14pt;
+            font-weight: normal;
+            color: #0f4761
+        }
+
+        h4 {
+            margin-top: 4pt;
+            margin-bottom: 2pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 116%;
+            font-family: Aptos;
+            font-size: 12pt;
+            font-weight: normal;
+            font-style: italic;
+            color: #0f4761
+        }
+
+        h5 {
+            margin-top: 4pt;
+            margin-bottom: 2pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 116%;
+            font-family: Aptos;
+            font-size: 12pt;
+            font-weight: normal;
+            color: #0f4761
+        }
+
+        h6 {
+            margin-top: 2pt;
+            margin-bottom: 0pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 116%;
+            font-family: Aptos;
+            font-size: 12pt;
+            font-weight: normal;
+            font-style: italic;
+            color: #595959
+        }
+
+        .Heading7 {
+            margin-top: 2pt;
+            margin-bottom: 0pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 116%;
+            font-size: 12pt;
+            font-weight: normal;
+            color: #595959
+        }
+
+        .Heading8 {
+            margin-bottom: 0pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 116%;
+            font-size: 12pt;
+            font-weight: normal;
+            font-style: italic;
+            color: #272727
+        }
+
+        .Heading9 {
+            margin-bottom: 0pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+            line-height: 116%;
+            font-size: 12pt;
+            font-weight: normal;
+            color: #272727
+        }
+
+        .Footer {
+            margin-bottom: 0pt;
+            line-height: normal;
+            font-size: 12pt
+        }
+
+        .IntenseQuote {
+            margin: 18pt 43.2pt;
+            text-align: center;
+            line-height: 116%;
+            border-top: 0.75pt solid #0f4761;
+            border-bottom: 0.75pt solid #0f4761;
+            padding-top: 10pt;
+            padding-bottom: 10pt;
+            font-size: 12pt;
+            font-style: italic;
+            color: #0f4761
+        }
+
+        .ListParagraph {
+            margin-left: 36pt;
+            margin-bottom: 8pt;
+            line-height: 116%;
+            font-size: 12pt
+        }
+
+        .Quote {
+            margin-top: 8pt;
+            margin-bottom: 8pt;
+            text-align: center;
+            line-height: 116%;
+            font-size: 12pt;
+            font-style: italic;
+            color: #404040
+        }
+
+        .Subtitle {
+            margin-bottom: 8pt;
+            line-height: 116%;
+            font-size: 14pt;
+            letter-spacing: 0.75pt;
+            color: #595959
+        }
+
+        .Title {
+            margin-bottom: 4pt;
+            line-height: normal;
+            font-family: 'Aptos Display';
+            font-size: 28pt;
+            letter-spacing: -0.5pt
+        }
+
+        span.FollowedHyperlink {
+            text-decoration: underline;
+            color: #96607d
+        }
+
+        span.Heading1Char {
+            font-family: 'Aptos Display';
+            font-size: 20pt;
+            color: #0f4761
+        }
+
+        span.Heading2Char {
+            font-family: 'Aptos Display';
+            font-size: 16pt;
+            color: #0f4761
+        }
+
+        span.Heading3Char {
+            font-size: 14pt;
+            color: #0f4761
+        }
+
+        span.Heading4Char {
+            font-style: italic;
+            color: #0f4761
+        }
+
+        span.Heading5Char {
+            color: #0f4761
+        }
+
+        span.Heading6Char {
+            font-style: italic;
+            color: #595959
+        }
+
+        span.Heading7Char {
+            color: #595959
+        }
+
+        span.Heading8Char {
+            font-style: italic;
+            color: #272727
+        }
+
+        span.Heading9Char {
+            color: #272727
+        }
+
+        span.Hyperlink {
+            text-decoration: underline;
+            color: #467886
+        }
+
+        span.IntenseEmphasis {
+            font-style: italic;
+            color: #0f4761
+        }
+
+        span.IntenseQuoteChar {
+            font-style: italic;
+            color: #0f4761
+        }
+
+        span.IntenseReference {
+            font-weight: bold;
+            font-variant: small-caps;
+            letter-spacing: 0.25pt;
+            color: #0f4761
+        }
+
+        span.QuoteChar {
+            font-style: italic;
+            color: #404040
+        }
+
+        span.SubtitleChar {
+            font-size: 14pt;
+            letter-spacing: 0.75pt;
+            color: #595959
+        }
+
+        span.TitleChar {
+            font-family: 'Aptos Display';
+            font-size: 28pt;
+            letter-spacing: -0.5pt
+        }
+
+        span.UnresolvedMention {
+            color: #605e5c;
+            background-color: #e1dfdd
+        }
+
+        @media (max-width: 900px) {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            td,
+            th {
+                padding: 8px;
+                text-align: left;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table style="margin-bottom: 0pt; padding: 0pt; border-collapse: collapse; width: 100%;">
+            <tbody>
+                <tr style="height:268.85pt;">
+                    <td style="width:414.2pt; padding:0pt 5.4pt; vertical-align:top;">
+                        <p style="margin-bottom:0pt; line-height:normal;"><span style="height:0pt; display:block; position:absolute; z-index:-1;"><img src="https://papss.com/wp-content/uploads/2025/08/PAPSSCARD-signature-PPT.png" width="552" height="351" alt="A close-up of a card
+
+AI-generated content may be incorrect." style="margin: 0 auto 0 0; display: block; "></span>&nbsp;</p>
+                        <p style="margin-left:22.55pt; margin-bottom:0pt; line-height:normal;">&nbsp;</p>
+                        <p style="margin-left:22.55pt; margin-bottom:0pt; line-height:normal;">&nbsp;</p>
+                        <p style="margin-left:22.55pt; margin-bottom:0pt; line-height:normal;">&nbsp;</p>
+                        <p style="margin-left: 22.55pt; margin-bottom: 0pt; line-height: 1;"><strong><span style="font-family: Arial; color: rgb(255, 255, 255); line-height: 1; font-size: 18px;">Papa Samba THIONGANE</span></strong></p>
+                        <p style="margin-left: 22.55pt; margin-bottom: 0pt; line-height: 1;"><span style="font-family: Arial; color: rgb(255, 255, 255); line-height: 1; font-size: 18px;">Head, Marketing *** Communications</span></p>
+                        <p style="margin-bottom:0pt; line-height:normal;">&nbsp;</p>
+                        <p style="margin-left: 50.9pt; margin-bottom: 0pt; line-height: 1; font-size: 8pt;">&nbsp;<span style="font-family:Arial; color:#ffffff;"><span style="font-size: 18px;">(</span><span style="line-height: 1; font-size: 18px;">+20) 128 2828 516</span></span></p>
+                        <p style="margin-left: 50.9pt; margin-bottom: 0pt; line-height: 1; font-size: 13pt;"><span style="line-height: 1; font-size: 18px;"><a href="mailto:pthiongane@papsscard.com" style="text-decoration:none;"><span class="Hyperlink" style="font-family:Arial; color:#ffffff;">pthiongane@papsscard.com</span></a></span></p>
+                        <p style="margin-left: 50.9pt; margin-bottom: 0pt; line-height: 1; font-size: 13pt;"><a href="https://papsscard.com/" style="text-decoration:none;"><span class="Hyperlink" style="font-family: Arial; color: rgb(255, 255, 255); line-height: 1; font-size: 18px;">papsscard.com</span></a></p>
+                        <p style="margin-bottom:0pt; line-height:normal;">&nbsp;</p>
+                        <p style="margin-bottom:0pt; line-height:normal;">&nbsp;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><br></p>
+    </div>
+
+<div style="color: red; font-size: 12px; width: 600px; margin: 0 auto; text-align: center;">Essai de Word &agrave; HTML - Veuillez passer &agrave; <a href="https://wordtohtml.net/site/payment">PRO</a>.</div>
+</body>
+
+</html>
